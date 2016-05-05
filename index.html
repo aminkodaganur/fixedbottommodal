@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixed Bottom Modal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="dist/assets/api/sematicui/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="http://oss.maxcdn.com/semantic-ui/2.1.8/components/icon.min.css">
+	<link rel="stylesheet" href="dist/assets/css/styles.css">
+</head>
+<body>
+	
+	<section>
+		
+		<div class="ui container">
+			
+			<div class="ui segment trigger-container">
+				<h3 class="ui header">Trigger options:</h3>				
+				<div class="ui three column grid">
+					<div class="column">
+						<div class="ui segment pull-center">
+							<button class="huge ui labeled icon primary button modal-trigger" data-target="#fixed-modal">
+								CHAT
+								<i class="comments outline icon"></i>
+							</button>
+						</div>
+					</div>
+					<div class="column">
+						<div class="ui segment pull-center">
+							<button class="huge ui labeled icon grey button modal-trigger" data-target="#fixed-modal">
+								MAIL US
+								<i class="mail outline icon"></i>
+							</button>							
+						</div>
+					</div>
+					<div class="column">
+						<div class="ui segment pull-center">
+							<button class="huge ui labeled icon green button modal-trigger" data-target="#fixed-modal">
+								FAQ
+								<i class="help icon"></i>
+							</button>							
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+	
+	<div class="modal fixed-bottom-modal" id="fixed-modal">
+		
+	</div>
+	<!-- Api framework files -->
+	<script type="text/javascript" src="dist/assets/api/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="dist/assets/api/sematicui/semantic.min.js"></script>
+
+	<script type="text/javascript" src="dist/assets/js/custom.js"></script>
+</body>
+</html>

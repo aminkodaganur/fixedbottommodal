@@ -1,0 +1,22 @@
+body{
+	font-family: 'Roboto Slab', serif;
+	min-height: 100%;
+}
+
+h3{
+	font-size: 2em !important;
+	font-weight: 300 !important;
+	letter-spacing: 2px !important;
+	display: inline-block;
+	border-bottom: 2px solid $red_color !important;
+    line-height: 46px !important;
+}
+
+.pull-center{
+	text-align: center;
+}
+
+.button{
+	font-weight: 300 !important;
+    letter-spacing: 2px !important;
+}

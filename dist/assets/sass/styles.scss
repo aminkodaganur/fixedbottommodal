@@ -1,0 +1,18 @@
+/* base folder */
+@import 'base/_variables.scss';
+@import 'base/_imports.scss';
+
+/* componets */
+@import 'componets/_modal.scss';
+@import 'componets/_tabs.scss';
+
+
+/* layout styles */
+@import 'layout/_sections.scss';
+
+
+/* Effect styles */
+/*@import 'componets/_effects.scss';*/
+@import 'base/_responsive.scss';
+
+@import 'base/_resets.scss';  

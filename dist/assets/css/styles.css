@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,300,700);
+/* base folder */
+/* ---- Imports */
+/* componets */
+/* line 2, ../sass/componets/_modal.scss */
+.modal {
+  display: none;
+}
+/* line 6, ../sass/componets/_modal.scss */
+.modal.fixed-bottom-modal {
+  width: 100%;
+  height: 300px;
+  max-height: 300px;
+  background-color: #ccc;
+  position: fixed;
+  bottom: 0px;
+}
+/* line 15, ../sass/componets/_modal.scss */
+.modal.active {
+  display: block;
+}
+
+/* layout styles */
+/* line 1, ../sass/layout/_sections.scss */
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/* line 5, ../sass/layout/_sections.scss */
+section .trigger-container {
+  background-color: #fdfdfd !important;
+}
+
+/* Effect styles */
+/*@import 'componets/_effects.scss';*/
+/* line 1, ../sass/base/_resets.scss */
+body {
+  font-family: 'Roboto Slab', serif;
+  min-height: 100%;
+}
+
+/* line 6, ../sass/base/_resets.scss */
+h3 {
+  font-size: 2em !important;
+  font-weight: 300 !important;
+  letter-spacing: 2px !important;
+  display: inline-block;
+  border-bottom: 2px solid #e74c3c !important;
+  line-height: 46px !important;
+}
+
+/* line 15, ../sass/base/_resets.scss */
+.pull-center {
+  text-align: center;
+}
+
+/* line 19, ../sass/base/_resets.scss */
+.button {
+  font-weight: 300 !important;
+  letter-spacing: 2px !important;
+}
