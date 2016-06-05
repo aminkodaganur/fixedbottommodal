@@ -1,0 +1,32 @@
+.search-tags-container{
+	text-align: center;
+	margin-top: 20px;
+
+	h5{
+		margin: 5px;
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: $blue_color;
+	}
+
+	i.circular.icon{
+		color: $blue_color !important;
+		box-shadow: 0 0 0 .07em $blue_color inset !important;
+	}
+	.column{
+		border : solid 1px $grey_color1;
+		transition: 0.5s ease;
+	}
+	.column:hover{
+		background-color: $white_color;
+		border-radius: 5px;
+		border : solid 1px $grey_color3;
+		transition: 0.5s ease;
+		cursor: pointer;
+	}
+}
+
+.search-input input{
+	border-radius: 100px !important;
+}

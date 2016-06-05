@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="dist/assets/api/sematicui/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="http://oss.maxcdn.com/semantic-ui/2.1.8/components/icon.min.css">
 	<link rel="stylesheet" href="dist/assets/css/styles.css">
+	<link rel="stylesheet" href="dist/assets/api/animation/animate.css">
 </head>
 <body>
 	
@@ -15,29 +16,29 @@
 			
 			<div class="ui segment trigger-container">
 				<h3 class="ui header">Trigger options:</h3>				
-				<div class="ui three column grid">
+				<div class="ui three column stackable grid">
 					<div class="column">
 						<div class="ui segment pull-center">
-							<button class="huge ui labeled icon primary button modal-trigger" data-target="#fixed-modal">
+							<button class="huge ui labeled icon primary button modal-trigger" data-target="#fixed-modal" data-tab-target="chat">
 								CHAT
 								<i class="comments outline icon"></i>
 							</button>
 						</div>
 					</div>
 					<div class="column">
-						<div class="ui segment pull-center">
-							<button class="huge ui labeled icon grey button modal-trigger" data-target="#fixed-modal">
-								MAIL US
-								<i class="mail outline icon"></i>
-							</button>							
+						<div class="ui segment pull-center">							
+							<button class="huge ui labeled icon grey button modal-trigger" data-target="#fixed-modal" data-tab-target="faq">
+								FAQ
+								<i class="search icon"></i>
+							</button>								
 						</div>
 					</div>
 					<div class="column">
 						<div class="ui segment pull-center">
-							<button class="huge ui labeled icon green button modal-trigger" data-target="#fixed-modal">
-								FAQ
-								<i class="help icon"></i>
-							</button>							
+							<button class="huge ui labeled icon green button modal-trigger" data-target="#fixed-modal" data-tab-target="mail">
+								MAIL US
+								<i class="mail outline icon"></i>
+							</button>				
 						</div>
 					</div>
 				</div>
@@ -49,6 +50,158 @@
 	
 	<div class="modal fixed-bottom-modal" id="fixed-modal">
 		
+		<div class="am-tab menu">
+			<div class="item" data-tab-target="chat"><i class="comments outline icon"></i> Live Chat</div>
+			<div class="item" data-tab-target="faq"><i class="search icon"></i> FAQ</div>
+			<div class="item last" data-tab-target="mail"><i class="mail outline icon"></i> MAIL US</div>
+			<div class="action close-tab" data-target="#fixed-modal"><i class="angle down icon"></i></div>
+		</div>
+		
+		<div class="am-tab am-tab-containt" data-tab="chat">
+				
+			<div class="ui grid">
+				<div class="sixteen wide column">
+					<div class="ui segments">
+						<div class="ui segment">
+							<div class="chat-box">
+						        <div class="chat-container">
+						            <div class="chat-conversation">
+						                <ul class="chat-conversation-list">
+						                    <li class="person1">
+						                        <div class="chat-avatar">
+						                            <img src="dist/assets/img/avt.png" width="34" />
+						                        </div>
+						                        <div class="conversation-text brang-bg">
+						                        	<div class="left-triangle"></div>
+						                            <div class="chat-text-wrap">
+						                                <p>
+						                                    How do I upload and post a photo to my friends Timeline?
+						                                </p>
+						                            </div>
+						                        </div>
+						                    </li>
+						                    <li class="person2">
+						                        <div class="chat-avatar">
+						                            <img src="dist/assets/img/avt.png" width="34" />
+						                        </div>
+						                        <div class="conversation-text default-bg">
+						                            <div class="chat-text-wrap">
+						                            	<div class="right-triangle"></div>
+						                                <p>
+						                                    Go to your friends Timeline and click Photo/Video at the top.
+						                                </p>
+						                            </div>
+						                        </div>
+						                    </li>
+						                </ul>
+						            </div>
+						        </div>
+						        <!-- chat-container -->
+						    </div>
+						</div>
+					    <div class="ui secondary segment">
+							<div class="ui fluid icon input">
+								<input type="text" placeholder="Your message">
+								<i class="send outline link icon"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="am-tab am-tab-containt" data-tab="faq">
+			
+			<div class="ui grid">
+				<div class="six wide column put-right-border pull-center">
+					<div class="info-block">
+						<h4>Prefer email instead?</h4>
+						<p>
+							<button class="ui labeled icon button">
+							  <i class="mail outline icon"></i>
+							  Write to us
+							</button>
+						</p>
+						<p>We are super quick to responding to your queries.</p>
+					</div>
+				</div>
+				<div class="ten wide column">
+					<div class="ui fluid left icon input search-input">
+						<input type="text" placeholder="What can we help you with? Start typing your question...">
+						<i class="search icon"></i>
+					</div>
+					
+					<div class="search-tags-container">
+
+						<div class="ui grid">
+							<div class="five wide column">
+								<i class="circular large folder icon"></i>
+								<h5>Sharing Openings</h5>
+							</div>
+							<div class="five wide column">
+								<i class="circular large pin icon"></i>
+								<h5>Managing Openings</h5>
+							</div>
+							<div class="five wide column">
+								<i class="circular large file powerpoint outline icon"></i>
+								<h5>Managing Candidates</h5>
+							</div>							
+							<div class="five wide column">
+								<i class="circular large settings icon"></i>
+								<h5>Account Managment</h5>
+							</div>
+							<div class="five wide column">
+								<i class="circular large folder icon"></i>
+								<h5>Sourcing Candidates</h5>
+							</div>
+							<div class="five wide column">
+								<i class="circular large file pdf outline icon"></i>
+								<h5>Reporting</h5>
+							</div>
+
+						</div>
+
+
+					</div>
+					
+
+				</div>
+			</div>
+
+		</div>
+		<div class="am-tab am-tab-containt" data-tab="mail">
+			<div class="ui grid">
+				<div class="sixteen wide column">
+					
+					<form class="ui form">
+						<div class="field disabled">
+							<input type="text" name="first-name" placeholder="First Name" value="To : support@recruiterbox.com">
+						</div>
+						<div class="field">
+							<input type="text" name="last-name" placeholder="Subject">
+						</div>
+						<div class="field">
+							<textarea rows="2"  placeholder="Message..."></textarea>
+						</div>
+						<div class="ui grid">
+							<input type="file" id="attachment" class="hidden" />
+							<div class="eight wide column blue-text" id="trigger-att">
+								<i class="attach icon"></i> Attach files
+							</div>
+							<div class="eight wide column">
+								<button class="ui grey labeled icon right floated button">
+									Send Mail
+									<i class="send outline icon"></i>
+								</button>
+							</div>
+						</div>
+						
+					</form>
+
+				</div>
+			</div>
+		</div>
+
 	</div>
 	<!-- Api framework files -->
 	<script type="text/javascript" src="dist/assets/api/jquery/jquery.min.js"></script>

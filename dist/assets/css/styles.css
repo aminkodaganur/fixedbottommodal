@@ -9,15 +9,286 @@
 /* line 6, ../sass/componets/_modal.scss */
 .modal.fixed-bottom-modal {
   width: 100%;
-  height: 300px;
   max-height: 300px;
-  background-color: #ccc;
   position: fixed;
   bottom: 0px;
 }
-/* line 15, ../sass/componets/_modal.scss */
+/* line 13, ../sass/componets/_modal.scss */
 .modal.active {
   display: block;
+  height: 300px;
+}
+
+/* line 3, ../sass/componets/_tabs.scss */
+.am-tab.menu {
+  width: 100%;
+  height: auto;
+  text-align: right;
+}
+/* line 7, ../sass/componets/_tabs.scss */
+.am-tab.menu .item {
+  display: inline-block;
+  background-color: #d5d5d5;
+  padding: 5px 20px 5px 20px;
+  min-width: 120px;
+  text-align: center;
+  border: solid 1px #b7b6b6;
+  border-bottom: none;
+  position: relative;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-right: 8px;
+  z-index: 555;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: 0.2s ease;
+}
+/* line 23, ../sass/componets/_tabs.scss */
+.am-tab.menu .item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  border-top-left-radius: 5px;
+  width: 17px;
+  height: 28px;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(30deg);
+  background-color: #d5d5d5;
+  border-left: 1px solid #b7b6b6;
+  z-index: -1;
+  transition: 0.2s ease;
+}
+/* line 41, ../sass/componets/_tabs.scss */
+.am-tab.menu .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -4px;
+  right: 0px;
+  border-top-right-radius: 10px;
+  width: 17px;
+  height: 28px;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  background-color: #d5d5d5;
+  border-right: 1px solid #b7b6b6;
+  z-index: -1;
+  transition: 0.2s ease;
+}
+/* line 59, ../sass/componets/_tabs.scss */
+.am-tab.menu .item.last {
+  margin-right: 44px !important;
+}
+/* line 62, ../sass/componets/_tabs.scss */
+.am-tab.menu .item.active {
+  z-index: 777;
+  background-color: #eeeeee;
+  transition: 0.2s ease;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+}
+/* line 68, ../sass/componets/_tabs.scss */
+.am-tab.menu .item.active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: 18px;
+  height: 39px;
+  border-top-left-radius: 10px;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(30deg);
+  background-color: #eeeeee;
+  border-left: 1px solid #b7b6b6;
+  z-index: -1;
+  transition: 0.2s ease;
+}
+/* line 86, ../sass/componets/_tabs.scss */
+.am-tab.menu .item.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -4px;
+  right: 0px;
+  width: 20px;
+  height: 38px;
+  border-top-right-radius: 10px;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  background-color: #eeeeee;
+  border-right: 1px solid #b7b6b6;
+  z-index: -1;
+  transition: 0.2s ease;
+}
+/* line 108, ../sass/componets/_tabs.scss */
+.am-tab.menu .action {
+  display: inline-block;
+  background-color: #333;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+  color: #fff;
+  max-width: 48px;
+  z-index: 444;
+  cursor: pointer;
+  right: 0;
+  position: absolute;
+}
+/* line 122, ../sass/componets/_tabs.scss */
+.am-tab.am-tab-containt {
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+  box-shadow: 13px 11px 18px 10px rgba(0, 0, 0, 0.5);
+  float: right;
+  display: none;
+  padding: 20px;
+  transition: 3s ease all;
+}
+/* line 132, ../sass/componets/_tabs.scss */
+.am-tab.am-tab-containt.active {
+  display: block;
+}
+/* line 135, ../sass/componets/_tabs.scss */
+.am-tab.am-tab-containt[data-tab=mail], .am-tab.am-tab-containt[data-tab=chat] {
+  width: 50%;
+  transition: 3s ease all;
+}
+
+/* line 142, ../sass/componets/_tabs.scss */
+.chat-box {
+  min-height: 30px;
+}
+
+/* line 145, ../sass/componets/_tabs.scss */
+.chat-box .chat-container {
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+/* line 151, ../sass/componets/_tabs.scss */
+.chat-box .chat-conversation-list {
+  list-style: none;
+  padding: 0px;
+}
+
+/* line 155, ../sass/componets/_tabs.scss */
+.chat-box .chat-conversation-list li {
+  margin-bottom: 10px;
+  min-height: 50px;
+}
+
+/* line 159, ../sass/componets/_tabs.scss */
+.chat-box .chat-conversation-list .person1 .chat-avatar {
+  width: 35px;
+  float: left;
+}
+
+/* line 163, ../sass/componets/_tabs.scss */
+.chat-box .chat-conversation-list .person1 .conversation-text {
+  margin-left: 10px;
+  float: left;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* line 171, ../sass/componets/_tabs.scss */
+.chat-box .chat-conversation-list .person2 .chat-avatar {
+  width: 35px;
+  float: right;
+}
+
+/* line 175, ../sass/componets/_tabs.scss */
+.chat-box .chat-conversation-list .person2 .conversation-text {
+  margin-right: 10px;
+  float: right;
+  text-align: right;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* line 183, ../sass/componets/_tabs.scss */
+.brang-bg {
+  background: #2185D0;
+  color: #ffffff;
+}
+
+/* line 187, ../sass/componets/_tabs.scss */
+.default-bg {
+  background-color: #333;
+  color: #ffffff;
+}
+
+/* line 192, ../sass/componets/_tabs.scss */
+.left-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8.5px 19px 8.5px 0;
+  border-color: transparent #2185D0 transparent transparent;
+  position: absolute;
+  display: inline-block;
+  left: 60px;
+}
+
+/* line 203, ../sass/componets/_tabs.scss */
+.right-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8.5px 0 8.5px 19px;
+  border-color: transparent transparent transparent #333333;
+  position: absolute;
+  display: inline-block;
+  right: 60px;
+}
+
+/* line 1, ../sass/componets/_searchtags.scss */
+.search-tags-container {
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 5, ../sass/componets/_searchtags.scss */
+.search-tags-container h5 {
+  margin: 5px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #3a82bd;
+}
+/* line 13, ../sass/componets/_searchtags.scss */
+.search-tags-container i.circular.icon {
+  color: #3a82bd !important;
+  box-shadow: 0 0 0 0.07em #3a82bd inset !important;
+}
+/* line 17, ../sass/componets/_searchtags.scss */
+.search-tags-container .column {
+  border: solid 1px #eeeeee;
+  transition: 0.5s ease;
+}
+/* line 21, ../sass/componets/_searchtags.scss */
+.search-tags-container .column:hover {
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: solid 1px #b7b6b6;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+/* line 30, ../sass/componets/_searchtags.scss */
+.search-input input {
+  border-radius: 100px !important;
 }
 
 /* layout styles */
@@ -26,13 +297,26 @@ section {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-/* line 5, ../sass/layout/_sections.scss */
-section .trigger-container {
-  background-color: #fdfdfd !important;
+
+/* line 10, ../sass/layout/_sections.scss */
+.info-block {
+  padding: 50px;
+  padding-bottom: 70px;
 }
 
 /* Effect styles */
 /*@import 'componets/_effects.scss';*/
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  /* line 4, ../sass/base/_responsive.scss */
+  .am-tab.am-tab-containt[data-tab=mail], .am-tab.am-tab-containt[data-tab=chat] {
+    width: 100%;
+  }
+
+  /* line 8, ../sass/base/_responsive.scss */
+  .ui.fluid.input {
+    width: 100%;
+  }
+}
 /* line 1, ../sass/base/_resets.scss */
 body {
   font-family: 'Roboto Slab', serif;
@@ -50,12 +334,43 @@ h3 {
 }
 
 /* line 15, ../sass/base/_resets.scss */
+h4 {
+  font-size: 1.2em !important;
+  font-weight: 400 !important;
+  letter-spacing: 1px !important;
+  display: inline-block;
+  border-bottom: 2px solid #e74c3c !important;
+  line-height: 32px !important;
+}
+
+/* line 24, ../sass/base/_resets.scss */
 .pull-center {
   text-align: center;
 }
 
-/* line 19, ../sass/base/_resets.scss */
+/* line 28, ../sass/base/_resets.scss */
 .button {
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   letter-spacing: 2px !important;
+}
+
+/* line 33, ../sass/base/_resets.scss */
+.put-right-border {
+  border-right: 1px solid #D5D5D5 !important;
+}
+
+/* line 37, ../sass/base/_resets.scss */
+p {
+  letter-spacing: 1px !important;
+}
+
+/* line 41, ../sass/base/_resets.scss */
+.blue-text {
+  color: #2185D0;
+  cursor: pointer;
+}
+
+/* line 45, ../sass/base/_resets.scss */
+.hidden {
+  display: none;
 }

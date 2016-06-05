@@ -12,11 +12,36 @@ h3{
     line-height: 46px !important;
 }
 
+h4{
+	font-size: 1.2em !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+    display: inline-block;
+    border-bottom: 2px solid #e74c3c !important;
+    line-height: 32px !important;
+}
+
 .pull-center{
 	text-align: center;
 }
 
 .button{
-	font-weight: 300 !important;
+	font-weight: 400 !important;
     letter-spacing: 2px !important;
+}
+
+.put-right-border{
+	border-right: 1px solid #D5D5D5 !important;
+}
+
+p{
+	letter-spacing: 1px !important;
+}
+
+.blue-text{
+	color: #2185D0;
+	cursor: pointer;
+}
+.hidden{
+	display: none; 
 }
